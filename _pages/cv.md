@@ -87,3 +87,7 @@ redirect_from:
 ---
 
 For a full list of publications, visit [Google Scholar](https://scholar.google.com/citations?user=yi3ClTQAAAAJ&hl=en).  
+
+## CV
+<embed src="https://bmengineer.github.io/files/CV-Yuzhou Chang-updated.pdf" type="application/pdf" width="600px" height="500px" />
+---
