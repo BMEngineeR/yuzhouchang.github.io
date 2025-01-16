@@ -12,7 +12,7 @@ title                    : "Yuzhou Chang / Personal website"
 title_separator          : "-"
 name                     : &name "Yuzhou Chang"
 description              : &description "personal description"
-url                      : https://BMEngineeR.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+URL                      : "https://BMEngineeR.github.io" # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "BMEngineeR/yuzhouchang.github.io"
 
@@ -27,7 +27,7 @@ author:
   bio              : "I am joint post dos and interested in computational biology on spatial omics data modeling using graph signal processing techniques"
   location         : "Columbus, OH"
   employer         : "The Ohio State University/fellow at Harvard Medical School"
-  uri              : # URL
+  url              : # URL
   email            : "yuzhou.chang@osumc.edu" 
 
   # Academic websites
