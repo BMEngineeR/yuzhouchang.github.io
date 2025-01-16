@@ -58,26 +58,6 @@ redirect_from:
 
 ---
 
-## Research & Work Experience
-
-### **Graduate Research Assistant**  
-**Qin Ma Lab, The Ohio State University** (04/2019 – 12/2023)  
-- Spatial transcriptomics analysis.  
-- Gene regulatory network inference.  
-- scRNA-Seq data analysis.  
-- Methylation data analysis.  
-
-### **Student Trainee**  
-**Illumina, Shanghai, China** (01/2017 – 06/2018)  
-- RNA-seq library preparation and sequencing quality control.  
-- BaseCalling to FASTQ transformation.  
-
-### **Research Assistant**  
-**Chu’s Lab, China Pharmaceutical University** (09/2016 – 12/2016)  
-- Performed experiments: microbial culture, drug-sensitivity testing, and DNA extraction.  
-
----
-
 ## Tool Development
 
 - **SpaGFT**: Spatial omics feature representation based on Graph Fourier Transform ([doc](https://spagft.readthedocs.io/en/latest/index.html)).  
