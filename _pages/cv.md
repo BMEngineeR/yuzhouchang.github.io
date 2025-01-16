@@ -77,12 +77,11 @@ redirect_from:
 
 ## Tool Development
 
-- **SpaGFT**: Spatial omics feature representation based on Graph Fourier Transform.  
+- **SpaGFT**: Spatial omics feature representation based on Graph Fourier Transform ([doc](https://spagft.readthedocs.io/en/latest/index.html)).  
 - **RESEPT**: A deep learning framework for tissue architecture identification based on spatial transcriptomics data ([GitHub](https://github.com/OSU-BMBL/RESEPT)).  
-- **SPRUCE**: Bayesian multivariate mixture model for spatial transcriptomics data (in development).  
+- **SPRUCE**: Bayesian multivariate mixture model for spatial transcriptomics data ([GitHub](https://github.com/carter-allen/spruce)).  
 - **IRIS-FGM**: An integrative single-cell RNA-Seq interpretation system for functional module analysis ([Bioconductor](https://bioconductor.org/packages/release/bioc/html/IRISFGM.html)).  
 - **scGNN**: Single-cell Graph Neural Network ([GitHub](https://github.com/juexinwang/scGNN)).  
-- **IRIS3**: Integrated cell-type-specific regulon inference server from single-cell RNA-Seq ([Web](https://bmbl.bmi.osumc.edu/iris3/)).  
 
 ---
 
