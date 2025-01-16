@@ -9,7 +9,7 @@ redirect_from:
 
 # About Me
 
-Hello! I am **Yuzhou Chang**, a postdoctoral researcher at the **Immuno-Oncology Informatics Group**, Pelotonia Institute for Immuno-Oncology at The Ohio State University, and **Beth Israel Deaconess Medical Center**, Harvard Medical School. My research spans the intersection of **spatial omics**, **immuno-oncology**, and **computational biology**.
+Hello! I am Yuzhou Chang, a postdoctoral researcher at the Immuno-Oncology Informatics Group with Dr. [Qin Ma](https://u.osu.edu/bmbl/), Pelotonia Institute for Immuno-Oncology at The Ohio State University, and Beth Israel Deaconess Medical Center, Harvard Medical School with Dr. [Sizun Jinag](https://sizunjianglab.com/). My research spans the intersection of **spatial omics**, **immuno-oncology**, and **computational biology**.
 
 ## Research Interests
 
