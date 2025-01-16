@@ -10,9 +10,11 @@ redirect_from:
 {% include base_path %}
 
 # Yuzhou Chang
+---
+- Department of Biomedical Informatics, College of Medicine, The Ohio State University
+- Pelotonia Institute for Immuno-Oncology
+- Center for Virology and Vaccine Research, Beth Israel Deaconess Medical Center, Harvard Medical School
 
-**Department of Biomedical Informatics, College of Medicine**  
-**The Ohio State University**  
 2255 Kenny Rd, Columbus, OH 43210  
 **Email**: yuzhou.chang@osumc.edu | chang.1754@osu.edu | ychang13@bidmc.harvard.edu  
 **GitHub**: [BMEngineeR](https://github.com/BMEngineeR)  
