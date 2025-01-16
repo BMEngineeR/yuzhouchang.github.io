@@ -12,9 +12,9 @@ title                    : "Yuzhou Chang / Personal website"
 title_separator          : "-"
 name                     : &name "Yuzhou Chang"
 description              : &description "personal description"
-URL                      : https://github.com/BMEngineeR/bmengineer.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+URL                      : https://BMEngineeR.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : # "" # the subpath of your site, e.g. "/blog"
-repository               : "https://BMEngineeR/bmengineer.github.io"
+repository               : "BMEngineeR/yuzhouchang.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -27,7 +27,7 @@ author:
   bio              : "I am joint post dos and interested in computational biology on spatial omics data modeling using graph signal processing techniques"
   location         : "Columbus, OH"
   employer         : "The Ohio State University/fellow at Harvard Medical School"
-  URL              : "https://github.com/BMEngineeR/bmengineer.github.io"# URL
+  uri              : # URL
   email            : "yuzhou.chang@osumc.edu" 
 
   # Academic websites
