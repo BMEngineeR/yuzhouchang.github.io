@@ -19,7 +19,7 @@ redirect_from:
 **Email**: yuzhou.chang@osumc.edu | chang.1754@osu.edu | ychang13@bidmc.harvard.edu  
 **GitHub**: [BMEngineeR](https://github.com/BMEngineeR)  
 
-[CV download](https://github.com/BMEngineeR/yuzhouchang.github.io/blob/master/files/CV-Yuzhou%20Chang-updated.pdf)
+[CV download](https://github.com/BMEngineeR/yuzhouchang.github.io/blob/master/files/CV-Yuzhou%20Chang.pdf)
 ---
 
 ## Education
