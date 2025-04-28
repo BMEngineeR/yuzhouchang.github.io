@@ -14,6 +14,7 @@ Hello! I am Yuzhou Chang, a postdoctoral researcher at the Immuno-Oncology Infor
 ## Research Interests
 
 - **Graph Signal Processing**: Leveraging graph-based methods for spatial transcriptomics analysis.
+- **Multiplexed foundation model development and application**: develop and use foundation mode lin few-shot and zero-shot cases.
 - **Spatial Omics Data Analysis**: Developing computational tools to study cell-cell communication and tissue architecture.
 - **Immuno-Oncology Applications**: Utilizing spatial transcriptomics for insights into tumor-immune interactions.
 - **Gene Regulatory Network Inference**: Advancing methodologies to decode gene regulation.
