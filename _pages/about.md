@@ -26,7 +26,7 @@ Hello! I am Yuzhou Chang, a postdoctoral researcher at the Immuno-Oncology Infor
 - **Ph.D.**: Biomedical Sciences, The Ohio State University (2018–2023)
   - Advisors: Prof. Qin Ma, Prof. Zihai Li
   - Training (computation): Under the umbrella of bioinformatics, graph signal processing, machine learning, deep learning, and large language models.
-  - Training (biology and biotechnology): Immuno-oncology (lymphocyte cell fates/states in tumor microenvironment), TCGA data mining, NGS sequencing, and multiplexed imaging.
+  - Training (biology and biotechnology): NGS sequencing (scRNA-seq and spatial transcriptomics), Immuno-oncology (lymphocyte cell fates/states in tumor microenvironment), and TCGA data mining.
 - **Working**: Technician, sequencing core, Shanghai Institute of Immunology, Shanghai Jiao Tong University School of Medicine (2016-2018)
   - Advisor: Prof. Lei Chen
 - **B.E.**: Biopharmaceutical, China Pharmaceutical University (2012–2016)
