@@ -19,14 +19,18 @@ Hello! I am Yuzhou Chang, a postdoctoral researcher at the Immuno-Oncology Infor
 - **Immuno-Oncology Applications**: Utilizing spatial transcriptomics for insights into tumor-immune interactions.
 - **Gene Regulatory Network Inference**: Advancing methodologies to decode gene regulation.
 
-## Education
+## Education and working experiences
 
 - **Postdoctoral Research**: Immuno-Oncology Informatics, OSU & Harvard Medical School (2024–present)
 - **Ph.D.**: Biomedical Sciences, The Ohio State University (2018–2023)
   - Advisors: Prof. Qin Ma, Prof. Zihai Li
-  - Training: Statistical modeling, bioinformatics, and computational systems biology
+  - Training (computation): Under the umbrella of bioinformatics, graph signal processing, machine learning, deep learning, and large language models.
+  - Training (biology and biotechnology): Immuno-oncology (lymphocyte cell fates/states in tumor microenvironment), TCGA data mining, NGS sequencing, and multiplexed imaging.
+- **Working**: Technician, sequencing core, Shanghai Institute of Immunology, Shanghai Jiao Tong University School of Medicine (2016-2018)
+  - Advisor: Prof. Lei Chen
 - **B.E.**: Biopharmaceutical, China Pharmaceutical University (2012–2016)
-
+  - Advisor: Prof. Weihua Chu
+    
 ## Professional Achievements
 
 I am the developer of tools like **SpaGFT**, a novel framework for spatial omics analysis using Graph Fourier Transform, and **RESEPT**, a deep learning framework for tissue architecture identification. 
