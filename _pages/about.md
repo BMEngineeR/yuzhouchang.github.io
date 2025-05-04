@@ -35,7 +35,7 @@ Hello! I am Yuzhou Chang, a postdoctoral researcher at the Immuno-Oncology Infor
 ## Professional Achievements
 
 I am the developer of tools like **SpaGFT**, a novel framework for spatial omics analysis using Graph Fourier Transform, and **RESEPT**, a deep learning framework for tissue architecture identification. 
-For a full list of my publications, please visit my [Google Scholar](https://scholar.google.com/) or [GitHub](https://github.com/BMEngineeR) profiles.
+For a full list of my publications, please visit my [Google Scholar](https://scholar.google.com/citations?user=yi3ClTQAAAAJ&hl=en) or [GitHub](https://github.com/BMEngineeR) profiles.
 
 ## Teaching & Mentorship
 
