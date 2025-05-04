@@ -22,6 +22,7 @@ Hello! I am Yuzhou Chang, a postdoctoral researcher at the Immuno-Oncology Infor
 ## Education and working experiences
 
 - **Postdoctoral Research**: Immuno-Oncology Informatics, OSU & Harvard Medical School (2024–present)
+  - Advisor: Prof. Qin Ma, Prof. Sizun Jiang  
 - **Ph.D.**: Biomedical Sciences, The Ohio State University (2018–2023)
   - Advisors: Prof. Qin Ma, Prof. Zihai Li
   - Training (computation): Under the umbrella of bioinformatics, graph signal processing, machine learning, deep learning, and large language models.
