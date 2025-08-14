@@ -7,7 +7,7 @@
   --light-primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   --light-secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
   --light-accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-  --light-bg: #f8f9fa;
+  --light-bg: #f5f5f5;
   --light-card-bg: rgba(255, 255, 255, 0.9);
   --light-glass-bg: rgba(255, 255, 255, 0.8);
   --light-border: rgba(0, 0, 0, 0.1);
@@ -27,14 +27,59 @@
 body {
   background: var(--light-bg) !important;
   color: var(--text-dark) !important;
+  min-height: 100vh;
+}
+
+/* Ensure all main containers have light grey background */
+html {
+  background: var(--light-bg) !important;
+}
+
+.page {
+  background: var(--light-bg) !important;
+}
+
+.page__inner-wrap {
+  background: transparent !important;
+}
+
+.initial-content {
+  background: transparent !important;
 }
 
 /* Update background pattern for light theme */
 body::before {
   background: 
-    radial-gradient(circle at 20% 80%, rgba(102, 126, 234, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(240, 147, 251, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(79, 172, 254, 0.08) 0%, transparent 50%);
+    radial-gradient(circle at 20% 80%, rgba(102, 126, 234, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(240, 147, 251, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(79, 172, 254, 0.03) 0%, transparent 50%);
+}
+
+/* Override any dark theme backgrounds */
+.masthead,
+.page__footer,
+.sidebar,
+.archive,
+.layout--single,
+.page__content,
+.page__inner-wrap,
+.initial-content,
+main {
+  background: transparent !important;
+}
+
+/* Ensure wrapper elements don't override light background */
+#main {
+  background: transparent !important;
+}
+
+.wrapper {
+  background: transparent !important;
+}
+
+/* Override any remaining dark elements */
+* {
+  background-color: inherit;
 }
 
 /* Light theme geometric shapes */
@@ -398,6 +443,206 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 1rem;
   position: relative;
   z-index: 1;
+}
+
+/* About Section with Photo Layout */
+.about-section-with-photo {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  align-items: start;
+  margin: 2rem 0;
+  background: var(--light-card-bg);
+  border: 1px solid var(--light-border);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: var(--light-shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-section-with-photo::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    from 0deg,
+    transparent,
+    rgba(79, 172, 254, 0.02),
+    transparent,
+    rgba(102, 126, 234, 0.02),
+    transparent
+  );
+  animation: rotate 20s linear infinite;
+  z-index: -1;
+}
+
+.about-content {
+  position: relative;
+  z-index: 1;
+}
+
+.about-photo-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.about-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  border: 4px solid var(--accent-blue);
+  box-shadow: 
+    0 0 25px rgba(79, 172, 254, 0.3),
+    0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.about-photo:hover {
+  transform: scale(1.05) rotate(-2deg);
+  box-shadow: 
+    0 0 35px rgba(79, 172, 254, 0.5),
+    0 12px 40px rgba(0, 0, 0, 0.15);
+  border-color: var(--accent-purple);
+}
+
+.photo-frame {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 2px solid var(--accent-blue);
+  border-radius: 20px;
+  opacity: 0.3;
+  z-index: 1;
+  animation: frameGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes frameGlow {
+  from { 
+    opacity: 0.2; 
+    transform: scale(1); 
+    border-color: var(--accent-blue);
+  }
+  to { 
+    opacity: 0.4; 
+    transform: scale(1.02); 
+    border-color: var(--accent-purple);
+  }
+}
+
+/* CV Download Section */
+.cv-download-section {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(79, 172, 254, 0.05);
+  border: 1px solid rgba(79, 172, 254, 0.2);
+  border-radius: 15px;
+  text-align: center;
+}
+
+.cv-download-section h4 {
+  color: var(--accent-blue);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.cv-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--accent-blue);
+  color: white !important;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.cv-download-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.cv-download-btn:hover::before {
+  left: 100%;
+}
+
+.cv-download-btn:hover {
+  background: var(--accent-purple);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+  color: white !important;
+}
+
+.cv-download-btn i {
+  font-size: 1.1rem;
+}
+
+.cv-note {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-section-with-photo {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .about-photo-container {
+    order: -1;
+  }
+  
+  .about-photo {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .cv-download-section {
+    margin-top: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .cv-download-btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-photo {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .cv-download-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
 }
 
 /* Blog post styling */
