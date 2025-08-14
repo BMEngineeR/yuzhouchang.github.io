@@ -7,10 +7,6 @@ redirect_from:
   - /about/
   - /about.html
 ---
-<div class="hero-section">
-  <h1 class="neon-text">Yuzhou Chang</h1>
-  <p class="subtitle neon-glow">Computational Biologist & Spatial Omics Researcher</p>
-</div>
 
 ## 🧬 About Me
 
