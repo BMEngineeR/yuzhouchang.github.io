@@ -1,0 +1,104 @@
+---
+layout: default
+---
+
+<div class="page__inner-wrap">
+  {% unless page.header.overlay_color or page.header.overlay_image %}
+    <header>
+      {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+      {% if page.read_time %}
+        <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+      {% endif %}
+    </header>
+  {% endunless %}
+
+  <section class="page__content futuristic-content" itemprop="text">
+    {{ content }}
+    {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+  </section>
+
+  <footer class="page__meta">
+    {% if site.data.ui-text[site.locale].meta_label %}
+      <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+    {% endif %}
+    {% include page__taxonomy.html %}
+    {% if page.last_modified_at %}
+      <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: "%B %d, %Y" }}</time></p>
+    {% elsif page.date %}
+      <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
+    {% endif %}
+  </footer>
+
+  {% if page.share %}{% include social-share.html %}{% endif %}
+
+  {% include post_pagination.html %}
+</div>
+
+<!-- Custom script for homepage enhancements -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Add futuristic enhancements specifically for the homepage
+    const content = document.querySelector('.futuristic-content');
+    if (content) {
+        // Add staggered animation delays to sections
+        const sections = content.querySelectorAll('h2, .research-grid, .timeline, .achievements-grid, .teaching-section, .contact-grid, .collaboration-cta');
+        sections.forEach((section, index) => {
+            section.style.animationDelay = (index * 0.2) + 's';
+            section.classList.add('animate-on-scroll');
+        });
+    }
+    
+    // Add interactive hover effects to research cards
+    const researchCards = document.querySelectorAll('.research-card');
+    researchCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-10px) rotateX(5deg)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) rotateX(0deg)';
+        });
+    });
+    
+    // Add pulse effect to achievement cards
+    const achievementCards = document.querySelectorAll('.achievement-card');
+    achievementCards.forEach((card, index) => {
+        setTimeout(() => {
+            card.classList.add('pulse-once');
+        }, index * 200);
+    });
+});
+</script>
+
+<style>
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.pulse-once {
+    animation: pulseOnce 1s ease-out;
+}
+
+@keyframes pulseOnce {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.futuristic-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Enhanced 3D effects */
+.research-card {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.achievement-card {
+    transform-style: preserve-3d;
+}
+</style>

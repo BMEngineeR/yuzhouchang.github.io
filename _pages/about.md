@@ -1,53 +1,157 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Yuzhou Chang - Computational Biology & Spatial Omics Research"
 author_profile: true
+layout: futuristic-home
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-# About Me
+<div class="hero-section">
+  <h1 class="neon-text">Yuzhou Chang</h1>
+  <p class="subtitle neon-glow">Computational Biologist & Spatial Omics Researcher</p>
+</div>
 
-Hello! I am Yuzhou Chang, a postdoctoral researcher at the Immuno-Oncology Informatics Group with Dr. [Qin Ma](https://u.osu.edu/bmbl/), Pelotonia Institute for Immuno-Oncology at The Ohio State University, and Beth Israel Deaconess Medical Center, Harvard Medical School with Dr. [Sizun Jinag](https://sizunjianglab.com/). My research spans the intersection of **spatial omics**, **immuno-oncology**, and **computational biology**.
+## 🧬 About Me
 
-## Research Interests
+Hello! I am **Yuzhou Chang**, a postdoctoral researcher at the Immuno-Oncology Informatics Group with Dr. [Qin Ma](https://u.osu.edu/bmbl/), Pelotonia Institute for Immuno-Oncology at The Ohio State University, and Beth Israel Deaconess Medical Center, Harvard Medical School with Dr. [Sizun Jiang](https://sizunjianglab.com/). My research spans the intersection of **spatial omics**, **immuno-oncology**, and **computational biology**.
 
-- **Graph Signal Processing**: Leveraging graph-based methods for spatial transcriptomics analysis.
-- **Multiplexed foundation model development and application**: develop and use a foundation model in few-shot and zero-shot cases.
-- **Spatial Omics Data Analysis**: Developing computational tools to study cell-cell communication and tissue architecture.
-- **Immuno-Oncology Applications**: Utilizing spatial transcriptomics for insights into tumor-immune interactions.
-- **Gene Regulatory Network Inference**: Advancing methodologies to decode gene regulation.
+## 🔬 Research Interests
 
-## Education and working experiences
+<div class="research-grid">
+  <div class="research-card">
+    <h3>🌐 Graph Signal Processing</h3>
+    <p>Leveraging graph-based methods for spatial transcriptomics analysis, developing novel algorithms for understanding cellular networks.</p>
+  </div>
+  
+  <div class="research-card">
+    <h3>🤖 Foundation Models</h3>
+    <p>Developing and applying multiplexed foundation models for few-shot and zero-shot learning in biological contexts.</p>
+  </div>
+  
+  <div class="research-card">
+    <h3>🧬 Spatial Omics</h3>
+    <p>Creating computational tools to study cell-cell communication and tissue architecture using cutting-edge spatial technologies.</p>
+  </div>
+  
+  <div class="research-card">
+    <h3>🩺 Immuno-Oncology</h3>
+    <p>Utilizing spatial transcriptomics for insights into tumor-immune interactions and therapeutic target identification.</p>
+  </div>
+  
+  <div class="research-card">
+    <h3>🔗 Gene Networks</h3>
+    <p>Advancing methodologies to decode gene regulation and understand complex biological systems.</p>
+  </div>
+</div>
 
-- **Postdoctoral Research**: Immuno-Oncology Informatics, OSU & Harvard Medical School (2024–present)
-  - Advisor: Prof. Qin Ma, Prof. Sizun Jiang  
-- **Ph.D.**: Biomedical Sciences, The Ohio State University (2018–2023)
-  - Advisors: Prof. Qin Ma, Prof. Zihai Li
-  - Training (computation): Under the umbrella of bioinformatics, graph signal processing, machine learning, deep learning, and large language models.
-  - Training (biology and biotechnology): NGS sequencing (scRNA-seq and spatial transcriptomics), Immuno-oncology (lymphocyte cell fates/states in tumor microenvironment), and TCGA data mining.
-- **Working**: Technician, sequencing core, Shanghai Institute of Immunology, Shanghai Jiao Tong University School of Medicine (2016-2018)
-  - Advisor: Prof. Lei Chen
-- **B.E.**: Biopharmaceutical, China Pharmaceutical University (2012–2016)
-  - Advisor: Prof. Weihua Chu
+## 🎓 Education & Experience
+
+<div class="timeline">
+  <div class="timeline-item">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <h3>🔬 Postdoctoral Research</h3>
+      <p class="timeline-period">2024–present</p>
+      <p><strong>Immuno-Oncology Informatics</strong><br>
+      The Ohio State University & Harvard Medical School</p>
+      <p>Advisors: Prof. Qin Ma, Prof. Sizun Jiang</p>
+    </div>
+  </div>
+  
+  <div class="timeline-item">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <h3>🎓 Ph.D. in Biomedical Sciences</h3>
+      <p class="timeline-period">2018–2023</p>
+      <p><strong>The Ohio State University</strong></p>
+      <p>Advisors: Prof. Qin Ma, Prof. Zihai Li</p>
+      <div class="skills-section">
+        <p><strong>Computational Training:</strong> Bioinformatics, Graph Signal Processing, Machine Learning, Deep Learning, Large Language Models</p>
+        <p><strong>Experimental Training:</strong> NGS sequencing (scRNA-seq, spatial transcriptomics), Immuno-oncology, TCGA data mining</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="timeline-item">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <h3>🧪 Research Technician</h3>
+      <p class="timeline-period">2016–2018</p>
+      <p><strong>Shanghai Institute of Immunology</strong><br>
+      Shanghai Jiao Tong University School of Medicine</p>
+      <p>Advisor: Prof. Lei Chen</p>
+    </div>
+  </div>
+  
+  <div class="timeline-item">
+    <div class="timeline-marker"></div>
+    <div class="timeline-content">
+      <h3>🎓 B.E. in Biopharmaceutical</h3>
+      <p class="timeline-period">2012–2016</p>
+      <p><strong>China Pharmaceutical University</strong></p>
+      <p>Advisor: Prof. Weihua Chu</p>
+    </div>
+  </div>
+</div>
     
-## Professional Achievements
+## 🏆 Professional Achievements
 
-I am the developer of tools like **SpaGFT**, a novel framework for spatial omics analysis using Graph Fourier Transform, and **RESEPT**, a deep learning framework for tissue architecture identification. 
-For a full list of my publications, please visit my [Google Scholar](https://scholar.google.com/citations?user=yi3ClTQAAAAJ&hl=en) or [GitHub](https://github.com/BMEngineeR) profiles.
+<div class="achievements-grid">
+  <div class="achievement-card">
+    <h3>🧬 SpaGFT</h3>
+    <p>Novel framework for spatial omics analysis using Graph Fourier Transform - revolutionizing how we understand cellular spatial relationships.</p>
+  </div>
+  
+  <div class="achievement-card">
+    <h3>🔬 RESEPT</h3>
+    <p>Deep learning framework for tissue architecture identification - enabling automated analysis of complex tissue structures.</p>
+  </div>
+  
+  <div class="achievement-card">
+    <h3>📊 Publications</h3>
+    <p>Multiple high-impact publications in computational biology and spatial omics. See my <a href="https://scholar.google.com/citations?user=yi3ClTQAAAAJ&hl=en" class="neon-link">Google Scholar</a> profile.</p>
+  </div>
+  
+  <div class="achievement-card">
+    <h3>💻 Open Source</h3>
+    <p>Active contributor to open-source bioinformatics tools. Check out my <a href="https://github.com/BMEngineeR" class="neon-link">GitHub</a> for latest projects.</p>
+  </div>
+</div>
 
-## Teaching & Mentorship
+## 🎓 Teaching & Mentorship
 
-I have contributed as a guest lecturer in courses such as:
-- **Analysis and Applications of Genome-Scale Data** (BMI 8130), The Ohio State University
-- **Applications of Machine Learning and Artificial Intelligence in Biomedical Informatics** (BMI 8050)
+<div class="teaching-section">
+  <p>I have contributed as a guest lecturer in courses such as:</p>
+  <ul class="course-list">
+    <li><strong>Analysis and Applications of Genome-Scale Data</strong> (BMI 8130) - The Ohio State University</li>
+    <li><strong>Applications of Machine Learning and Artificial Intelligence in Biomedical Informatics</strong> (BMI 8050)</li>
+  </ul>
+</div>
 
-## Contact Information
+## 📬 Contact Information
 
-- **Email**: yuzhou.chang@osumc.edu | chang.1754@osu.edu | ychang13@bidmc.harvard.edu
-- **GitHub**: [BMEngineeR](https://github.com/BMEngineeR)
-- **Office**: 2255 Kenny Rd, Columbus, OH 43210, USA
+<div class="contact-grid">
+  <div class="contact-item">
+    <h4>📧 Email</h4>
+    <p><a href="mailto:yuzhou.chang@osumc.edu" class="neon-link">yuzhou.chang@osumc.edu</a></p>
+    <p><a href="mailto:chang.1754@osu.edu" class="neon-link">chang.1754@osu.edu</a></p>
+    <p><a href="mailto:ychang13@bidmc.harvard.edu" class="neon-link">ychang13@bidmc.harvard.edu</a></p>
+  </div>
+  
+  <div class="contact-item">
+    <h4>💻 GitHub</h4>
+    <p><a href="https://github.com/BMEngineeR" class="neon-link">BMEngineeR</a></p>
+  </div>
+  
+  <div class="contact-item">
+    <h4>🏢 Office</h4>
+    <p>2255 Kenny Rd<br>Columbus, OH 43210, USA</p>
+  </div>
+</div>
 
-I am excited to collaborate on advancing the frontiers of bioinformatics and spatial biology. Feel free to reach out!
+<div class="collaboration-cta">
+  <p class="neon-glow">🚀 I am excited to collaborate on advancing the frontiers of bioinformatics and spatial biology. Feel free to reach out!</p>
+</div>
 
