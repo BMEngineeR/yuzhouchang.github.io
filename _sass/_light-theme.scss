@@ -374,7 +374,62 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Photo caption styles removed */
 
-/* About section photo layout removed - now using simple text layout */
+/* About Me with Photo on Left */
+.about-with-photo {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin: 2rem 0;
+}
+
+.photo-left {
+  flex-shrink: 0;
+  width: 120px;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid var(--accent-blue);
+  box-shadow: 
+    0 0 15px rgba(79, 172, 254, 0.3),
+    0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  object-fit: cover;
+  display: block;
+}
+
+.profile-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 
+    0 0 20px rgba(79, 172, 254, 0.5),
+    0 6px 25px rgba(0, 0, 0, 0.15);
+  border-color: var(--accent-purple);
+}
+
+.content-right {
+  flex: 1;
+}
+
+/* Responsive design for photo layout */
+@media (max-width: 768px) {
+  .about-with-photo {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  
+  .photo-left {
+    width: 100px;
+    align-self: center;
+  }
+  
+  .profile-photo {
+    width: 100px;
+    height: 100px;
+  }
+}
 
 /* CV Download Section */
 .cv-download-section {
