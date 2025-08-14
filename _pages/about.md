@@ -12,11 +12,6 @@ redirect_from:
   <p class="subtitle neon-glow">Computational Biologist & Spatial Omics Researcher</p>
 </div>
 
-<div class="photo-showcase">
-  <img src="/images/Yuzhou-small.jpg" alt="Yuzhou Chang" class="showcase-photo">
-  <p class="photo-caption">Yuzhou Chang - Postdoctoral Researcher in Computational Biology</p>
-</div>
-
 ## 🧬 About Me
 
 Hello! I am **Yuzhou Chang**, a postdoctoral researcher at the Immuno-Oncology Informatics Group with Dr. [Qin Ma](https://u.osu.edu/bmbl/), Pelotonia Institute for Immuno-Oncology at The Ohio State University, and Beth Israel Deaconess Medical Center, Harvard Medical School with Dr. [Sizun Jiang](https://sizunjianglab.com/). My research spans the intersection of **spatial omics**, **immuno-oncology**, and **computational biology**.

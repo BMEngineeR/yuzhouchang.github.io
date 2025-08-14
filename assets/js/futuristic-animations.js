@@ -8,28 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Simple background initialized');
     }
     
-    // Handle image loading issues
-    function handleImageLoading() {
-        const images = document.querySelectorAll('.showcase-photo, .about-photo');
-        images.forEach(img => {
-            img.addEventListener('error', function() {
-                console.log('Image failed to load:', this.src);
-                this.style.display = 'block';
-                this.style.backgroundColor = '#f0f0f0';
-                this.style.border = '2px solid #ddd';
-                this.alt = 'Photo loading failed';
-            });
-            
-            img.addEventListener('load', function() {
-                console.log('Image loaded successfully:', this.src);
-                this.style.opacity = '1';
-            });
-            
-            // Set initial opacity for fade-in effect
-            img.style.opacity = '0';
-            img.style.transition = 'opacity 0.3s ease';
-        });
-    }
+    // Image handling removed - no photos in use
     
     // Create grid overlay
     function createGridOverlay() {
@@ -209,7 +188,6 @@ document.addEventListener('DOMContentLoaded', function() {
         addScrollAnimations();
         addTypingAnimation();
         addTimeBasedColorShifting();
-        handleImageLoading();
         optimizeForMobile();
         
         console.log('🚀 Futuristic effects initialized!');
