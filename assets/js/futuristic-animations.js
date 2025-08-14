@@ -2,18 +2,33 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     
-    // Create geometric background shapes
-    function createGeometricShapes() {
-        const geometricBg = document.createElement('div');
-        geometricBg.className = 'geometric-bg';
-        
-        for (let i = 0; i < 4; i++) {
-            const shape = document.createElement('div');
-            shape.className = 'geometric-shape';
-            geometricBg.appendChild(shape);
-        }
-        
-        document.body.appendChild(geometricBg);
+    // Simplified background effects
+    function createSimpleBackground() {
+        // Keep only essential background elements
+        console.log('Simple background initialized');
+    }
+    
+    // Handle image loading issues
+    function handleImageLoading() {
+        const images = document.querySelectorAll('.showcase-photo, .about-photo');
+        images.forEach(img => {
+            img.addEventListener('error', function() {
+                console.log('Image failed to load:', this.src);
+                this.style.display = 'block';
+                this.style.backgroundColor = '#f0f0f0';
+                this.style.border = '2px solid #ddd';
+                this.alt = 'Photo loading failed';
+            });
+            
+            img.addEventListener('load', function() {
+                console.log('Image loaded successfully:', this.src);
+                this.style.opacity = '1';
+            });
+            
+            // Set initial opacity for fade-in effect
+            img.style.opacity = '0';
+            img.style.transition = 'opacity 0.3s ease';
+        });
     }
     
     // Create grid overlay
@@ -168,67 +183,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 60000); // Update every minute
     }
     
-    // Add 3D geometry interactive effects
-    function add3DGeometryEffects() {
-        const geometryContainers = document.querySelectorAll('.geometry-3d-container');
-        geometryContainers.forEach(container => {
-            const cube = container.querySelector('.rotating-cube');
-            const polyhedron = container.querySelector('.morphing-polyhedron');
-            const icosahedron = container.querySelector('.floating-icosahedron');
-            
-            container.addEventListener('mouseenter', function() {
-                if (cube) {
-                    cube.style.animationDuration = '2s';
-                    cube.style.transform = 'scale(1.1)';
-                }
-                if (polyhedron) {
-                    polyhedron.style.animationDuration = '4s';
-                    polyhedron.style.transform = 'scale(1.1)';
-                }
-                if (icosahedron) {
-                    icosahedron.style.animationDuration = '3s';
-                    icosahedron.style.transform = 'scale(1.1)';
-                }
-            });
-            
-            container.addEventListener('mouseleave', function() {
-                if (cube) {
-                    cube.style.animationDuration = '8s';
-                    cube.style.transform = 'scale(1)';
-                }
-                if (polyhedron) {
-                    polyhedron.style.animationDuration = '12s';
-                    polyhedron.style.transform = 'scale(1)';
-                }
-                if (icosahedron) {
-                    icosahedron.style.animationDuration = '10s';
-                    icosahedron.style.transform = 'scale(1)';
-                }
-            });
-            
-            // Add click effect for color changing
-            container.addEventListener('click', function() {
-                if (cube) {
-                    cube.style.filter = 'hue-rotate(90deg)';
-                    setTimeout(() => {
-                        cube.style.filter = 'hue-rotate(0deg)';
-                    }, 1000);
-                }
-                if (polyhedron) {
-                    polyhedron.style.filter = 'hue-rotate(180deg)';
-                    setTimeout(() => {
-                        polyhedron.style.filter = 'hue-rotate(0deg)';
-                    }, 1000);
-                }
-                if (icosahedron) {
-                    icosahedron.style.filter = 'hue-rotate(270deg)';
-                    setTimeout(() => {
-                        icosahedron.style.filter = 'hue-rotate(0deg)';
-                    }, 1000);
-                }
-            });
-        });
-    }
+
     
     // Performance optimization: Reduce animations on mobile
     function optimizeForMobile() {
@@ -239,17 +194,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 particleContainer.style.display = 'none';
             }
             
-            // Reduce geometric shapes
-            const shapes = document.querySelectorAll('.geometric-shape');
-            shapes.forEach((shape, index) => {
-                if (index > 1) shape.style.display = 'none';
-            });
+            // Mobile optimizations applied
         }
     }
     
     // Initialize all effects
     function initializeFuturisticEffects() {
-        createGeometricShapes();
+        createSimpleBackground();
         createGridOverlay();
         createParticleSystem();
         enhanceContentCards();
@@ -258,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function() {
         addScrollAnimations();
         addTypingAnimation();
         addTimeBasedColorShifting();
-        add3DGeometryEffects();
+        handleImageLoading();
         optimizeForMobile();
         
         console.log('🚀 Futuristic effects initialized!');

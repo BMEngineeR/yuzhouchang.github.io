@@ -82,26 +82,7 @@ main {
   background-color: inherit;
 }
 
-/* Light theme geometric shapes */
-.geometric-shape {
-  opacity: 0.05 !important;
-}
-
-.geometric-shape:nth-child(1) {
-  background: linear-gradient(45deg, var(--accent-blue), rgba(79, 172, 254, 0.3));
-}
-
-.geometric-shape:nth-child(2) {
-  background: linear-gradient(45deg, var(--accent-purple), rgba(102, 126, 234, 0.3));
-}
-
-.geometric-shape:nth-child(3) {
-  background: linear-gradient(45deg, var(--accent-pink), rgba(240, 147, 251, 0.3));
-}
-
-.geometric-shape:nth-child(4) {
-  background: linear-gradient(45deg, var(--accent-green), rgba(40, 167, 69, 0.3));
-}
+/* Simplified light theme elements */
 
 /* Light theme grid */
 .grid-overlay {
@@ -396,6 +377,36 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 
+/* Image loading optimization */
+.showcase-photo,
+.about-photo {
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* Fallback for broken images */
+.showcase-photo:not([src]),
+.showcase-photo[src=""],
+.about-photo:not([src]),
+.about-photo[src=""] {
+  background: var(--light-border);
+  position: relative;
+}
+
+.showcase-photo:not([src])::after,
+.showcase-photo[src=""]::after,
+.about-photo:not([src])::after,
+.about-photo[src=""]::after {
+  content: "📷";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: var(--text-muted);
+}
+
 .photo-showcase::before {
   content: '';
   position: absolute;
@@ -426,8 +437,13 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.4s ease;
   margin: 0 auto 1rem;
   object-fit: cover;
+  object-position: center;
   position: relative;
   z-index: 1;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1;
 }
 
 .showcase-photo:hover {
@@ -502,8 +518,12 @@ h1, h2, h3, h4, h5, h6 {
     0 6px 25px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease;
   object-fit: cover;
+  object-position: center;
   position: relative;
   z-index: 2;
+  display: block;
+  max-width: 100%;
+  aspect-ratio: 1;
 }
 
 .about-photo:hover {
@@ -683,7 +703,5 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2.2rem;
   }
   
-  .geometric-shape {
-    opacity: 0.03 !important;
-  }
+  /* Clean mobile design */
 }
