@@ -12,7 +12,7 @@ redirect_from:
 
 <div class="about-with-photo">
   <div class="photo-left">
-    <img src="/images/Yuzhou-small.jpg" alt="Yuzhou Chang" class="profile-photo">
+    <img src="{{ '/images/test-photo.png' | relative_url }}" alt="Yuzhou Chang" class="profile-photo" onerror="console.log('Image failed to load:', this.src);" onload="console.log('Image loaded successfully:', this.src)">
   </div>
   
   <div class="content-right">

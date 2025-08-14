@@ -398,6 +398,27 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s ease;
   object-fit: cover;
   display: block;
+  background: #f0f0f0;
+  min-height: 120px;
+  min-width: 120px;
+}
+
+/* Fallback for when image doesn't load */
+.profile-photo:not([src]),
+.profile-photo[src=""] {
+  background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+  position: relative;
+}
+
+.profile-photo:not([src])::after,
+.profile-photo[src=""]::after {
+  content: "👤";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: var(--text-muted);
 }
 
 .profile-photo:hover {
